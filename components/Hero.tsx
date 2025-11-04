@@ -7,10 +7,10 @@ interface HeroContent {
 }
 
 export default function Hero({ onLoad }: HeroContent) {
-  const [heroTitle, setHeroTitle] = useState('Empowering Engineering Excellence')
+  const [heroTitle, setHeroTitle] = useState('Empowering the Future of Energy')
   const [heroParagraph, setHeroParagraph] = useState(
-    "Welcome to the IEEE Student Branch of the University of Ruhuna! We are a vibrant community of passionate students dedicated to innovation, technology, and professional growth. As part of the world's largest technical professional organization, our branch provides a dynamic platform for students to engage in hands-on projects, technical workshops, leadership development, and global networking opportunities. We strive to empower future engineers and technologists by fostering a culture of creativity, collaboration, and continuous learning. Whether you're looking to expand your knowledge, connect with industry leaders, or make an impact through technology, you'll find your place here with us."
-  )
+    "Welcome to the IEEE Power & Energy Society (PES)  of the University of Ruhuna! Since 2012, we have been a vibrant community of students passionate about power, energy, and sustainable innovation. Our mission is to empower future engineers by fostering collaboration, creativity, and knowledge sharing in the energy sector. Whether you’re looking to expand your expertise, connect with industry leaders, or contribute to building a sustainable future, you’ll find your place with us."
+    )
 
   useEffect(() => {
     const fetchHeroContent = async () => {

@@ -8,7 +8,7 @@ import About from "@/components/About"
 import Events from "@/components/Events"
 import Team from "@/components/Team"
 import Footer from "@/components/Footer"
-import FloatingCarousel from "@/components/FloatingCarousel"
+//import FloatingCarousel from "@/components/FloatingCarousel"
 import FloatingLogo from "@/components/FloatingLogo"
 import AnimatedCircuit from "@/components/AnimatedCircuit"
 import SBTimeline from "@/components/SBTimeline"
@@ -92,7 +92,7 @@ export default function Home() {
         {/* Floating carousel */}
         <div className="fixed top-1/2 -translate-y-1/2 z-40 right-5 md:right-20">
           <div className="w-[300px] h-[300px] md:w-[520px] md:h-[520px] overflow-hidden">
-            <FloatingCarousel />
+           {/* <FloatingCarousel /> */}
           </div>
         </div>
 

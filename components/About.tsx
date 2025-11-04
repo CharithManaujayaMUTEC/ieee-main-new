@@ -39,7 +39,6 @@ export default function About() {
   const [aboutPara, setAboutPara] = useState('')
   const [projects, setProjects] = useState(0)
   const [members, setMembers] = useState(0)
-  const [subchapters, setSubchapters] = useState(0)
   const [visible, setVisible] = useState(false)
 
   const sectionRef = useRef<HTMLElement | null>(null)
@@ -53,9 +52,8 @@ export default function About() {
 
         setAboutTitle(content.About_Title || '')
         setAboutPara(content.About_Para || '')
-        setProjects(parseInt(content.Projects) || 0)
-        setMembers(parseInt(content.Members) || 0)
-        setSubchapters(parseInt(content.Sub_Chapters) || 0)
+        setProjects(parseInt(content.Projects) || 6)
+        setMembers(parseInt(content.Members) || 10)
       } catch (err) {
         console.error('Failed to load about data:', err)
       }
@@ -96,7 +94,7 @@ export default function About() {
         </h2>
         <p className="text-gray-300 text-base sm:text-lg leading-relaxed text-center md:text-left">
           {aboutPara ||
-            'The IEEE Student Branch of the University of Ruhuna has established a strong presence both locally and internationally through its active participation in various technical, professional, and humanitarian initiatives.'}
+            'The IEEE PES was established in 2012 with the vision of bridging academia and industry in the field of power and energy. Through technical workshops, field visits, guest lectures, and collaborative projects, we provide students with valuable exposure to real-world challenges and solutions. Our mission is to inspire the next generation of engineers to drive advancements in power, energy, and sustainability.'}
         </p>
         <p className="text-gray-400 text-sm sm:text-base text-center md:text-left">
           Join us to be part of a global network that supports your career growth and technical development.
@@ -108,7 +106,6 @@ export default function About() {
         {[
           { label: 'Projects', value: projects },
           { label: 'Members', value: members },
-          { label: 'Subchapters', value: subchapters },
         ].map(({ label, value }) => (
           <div key={label} className="flex flex-col items-center relative">
             <div className="relative w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center rounded-full before:absolute before:inset-0 before:rounded-full before:bg-blue-500/30 before:blur-xl before:animate-pulse">

@@ -90,11 +90,8 @@ export default function SBTimeline({ onLoad }: SBTimelineProps) {
     >
       <h2 className="text-center text-white text-4xl font-bold mb-4">Our Journey</h2>
       <p className="text-center text-gray-300 max-w-2xl mx-auto mb-12 text-lg">
-        Highlights of our milestones and achievements over the years.
+        The IEEE Power & Energy Society (PES) was established in 2012, marking the beginning of its journey to promote knowledge sharing, innovation, and collaboration in the fields of power and energy.
       </p>
-
-      {/* Glowing beam */}
-      <div className="absolute top-1/2 left-0 w-full h-1 bg-green-500 shadow-[0_0_20px_#00843D] z-0" />
 
       {/* Timeline container */}
       <div
